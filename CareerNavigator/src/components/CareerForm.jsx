@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState } from "react"; 
+
 
 export default function CareerForm({ onRecommend }) {
   const [user, setUser] = useState({ name: "", education: "", skills: "" });
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     onRecommend(user);
+    
   };
 
   return (
@@ -34,6 +36,7 @@ export default function CareerForm({ onRecommend }) {
         />
         <button
           type="submit"
+        
           className="bg-slate-900 text-white py-2 rounded-xl  hover:bg-slate-500 transition"
         >
           Get Recommendations
