@@ -3,7 +3,7 @@ export default function Recommendation({ data }) {
 
   return (
     <div className="bg-indigo-50 p-6 rounded-xl shadow-md mt-6 max-w-lg mx-auto">
-      <h3 className="text-xl font-bold text-indigo-700 mb-3">Recommended Careers</h3>
+      <h3 className="text-xl font-bold text-green-700 mb-3">Recommended Careers</h3>
       <ul className="space-y-2">
         {data.map((career, index) => (
           <li
